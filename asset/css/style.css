@@ -55,7 +55,7 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: max-content;
-    background-color: rgba(70, 116, 24, 0.7);
+    background-color:  rgba(133, 217, 189, 0.6);
     place-items: center;
 }
 
@@ -87,12 +87,13 @@ li {
 }
 
 a {
-    margin-top: 5%;
+    align-items: center;
+    margin-top: 10px;
     margin-left: 30%;
 }
 
 .cv, .contact {
-    height: 30%;
+    height: 35%;
 }
 
 
