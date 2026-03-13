@@ -14,6 +14,7 @@ let swiper = new Swiper(".swiper", {
 });
 
 let stopButton = document.getElementById("stopButton");
+let startButton = document.getElementById("startButton");
 
 stopButton.addEventListener("click", () => {
   swiper.autoplay.stop();
