@@ -22,3 +22,15 @@ stopButton.addEventListener("click", () => {
 startButton.addEventListener("click", () => {
   swiper.autoplay.start();
 });
+function updateButtonOpacity() { 
+  if(swiper.autoplay.running) {
+    stopButton.style.opacity = "1";
+    startButton.style.opacity = "0.5 ";
+  }else {
+    stopButton.style.opacity = "0.5";
+    startButton.style.opacity = "1";
+  }
+}
+updateButtonOpacity();
+swiper.on("autoplayStart", updateButtonOpacity);
+swiper.on("autoplayStop", updateButtonOpacity);

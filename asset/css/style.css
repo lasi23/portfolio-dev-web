@@ -84,6 +84,14 @@ a {
     height: 35%;
 }
 
+button{
+    padding: 1em 2em;
+    border-radius: 10px;
+    background-color: rgb(228, 210, 119);
+    color: black;
+    
+}
+
 /* ----------------------css button------------------------- */
 .button {
     background-color: rgb(228, 210, 119);
