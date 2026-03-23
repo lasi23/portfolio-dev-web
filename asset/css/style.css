@@ -195,6 +195,10 @@ button{
     }
 
     @media screen and (max-width: 1280px) {
+        header h2 {
+            font-size: 2em;
+            text-align: center;
+        }
 
         main {
             grid-template-columns: 1fr;
@@ -203,7 +207,6 @@ button{
             margin-top: 25%;
             font-size: x-large;
             padding: 10px 20px;
-            text-align: center;
         }
         .a-propos, .competence, .cv, .contact {
             width: 70%;
