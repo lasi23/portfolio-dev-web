@@ -13,6 +13,6 @@ if (window.innerWidth > 768) {
         duration: 800,
         delay: anime.stagger(100),
         easing: 'easeOutBounce',
-        loop: true
+        loop: false
     });
 }
