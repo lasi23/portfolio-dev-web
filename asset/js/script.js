@@ -8,10 +8,10 @@ if (window.innerWidth > 768) {
 
     anime({
         targets: '.char',
-        translateY: [-50, 0],
+        translateY: [-20, 0],
         rotate: [-360, 0],
-        duration: 800,
-        delay: anime.stagger(100),
+        duration: 1600,
+        delay: anime.stagger(20),
         easing: 'easeOutBounce',
         loop: false
     });
