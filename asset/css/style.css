@@ -226,6 +226,9 @@ button{
             width: 220px;
             height: 330px;
         }
+        .char {
+            display: none;
+        }
 
         }
 
