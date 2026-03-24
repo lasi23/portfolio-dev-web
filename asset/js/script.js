@@ -1,3 +1,4 @@
+// animation du slogan
 if (window.innerWidth > 768) {
     const titre = document.getElementById('anim-slogan');
 
@@ -16,3 +17,17 @@ if (window.innerWidth > 768) {
         loop: false
     });
 }
+// animation de l'image de fougère qui s'estompe progressivement après 2 secondes
+const img = document.getElementById('img-fougere');
+let opacity = 1;
+
+setTimeout(() => {
+    const interval = setInterval(() => {
+        opacity -= 0.005;
+        img.style.opacity = opacity;
+        
+        if (opacity <= 0.7) {
+            clearInterval(interval);
+        }
+    }, 80); 
+}, 2000);

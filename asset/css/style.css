@@ -49,10 +49,13 @@ header {
     transform: rotate(90deg) translateY(-100vw);
     transform-origin: top left;
     z-index: 0;
-    opacity: 0.7;
     margin-bottom: 0%;
 }
 
+.img-fougere {
+    opacity: 1;
+    transition: opacity 5s ease-in-out;
+}
 
 main {
     display: grid;
