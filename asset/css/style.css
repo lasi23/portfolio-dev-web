@@ -127,12 +127,17 @@ button{
 
 /* --------------boutton scroll to top------------------------- */ 
 #scroll-to-top {
-    display: none;
+    opacity: 0;
     position: fixed;
     bottom: 20px;
     right: 1%;
     z-index: 100;
     width: 100px;
+}
+
+#scroll-to-top.show {
+    opacity: 0.6;
+    transition: opacity 0.5s ease-in-out;
 }
 
 /* -----------------------css swipper------------------------- */

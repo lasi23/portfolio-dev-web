@@ -35,8 +35,8 @@ setTimeout(() => {
 const scrollBtn = document.getElementById('scroll-to-top');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
-        scrollBtn.style.display = 'block';
+        scrollBtn.classList.add('show');
     } else {
-        scrollBtn.style.display = 'none';
+        scrollBtn.classList.remove('show');
     }
 });
