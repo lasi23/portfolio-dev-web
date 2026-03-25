@@ -65,6 +65,18 @@ setTimeout(() => {
     }, 80); 
 }, 2000);
 
+// initialisation aos
+function initAOS() {
+    AOS.init({
+        delay: 200,
+        duration: 800,
+        disable: window.innerWidth <= 1024 
+    });
+}
+
+window.addEventListener('load', initAOS);
+
+
 // apparition du boutton scroll to top après 2 secondes
 const scrollBtn = document.getElementById('scroll-to-top');
 window.addEventListener('scroll', () => {
