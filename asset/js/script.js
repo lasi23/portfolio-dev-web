@@ -1,3 +1,30 @@
+// scroll barre de navigation
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        nav.style.position = 'fixed';
+        nav.style.top = '0';
+        nav.style.left = '0';
+    }
+});
+
+// menu burger
+const burger = document.querySelector('nav img');
+const navLinks = document.querySelector('.nav-links');
+function resizeHandler() {
+    if (window.innerWidth <= 768) {
+        burger.style.display = 'block';
+    }else {
+        burger.style.display = 'none';
+    }
+}
+window.addEventListener('resize', resizeHandler);
+resizeHandler(); 
+
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
 // animation du slogan
 if (window.innerWidth > 768) {
     const titre = document.getElementById('anim-slogan');
