@@ -11,6 +11,7 @@ window.addEventListener('scroll', () => {
 // menu burger
 const burger = document.querySelector('nav img');
 const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');   
 function resizeHandler() {
     if (window.innerWidth <= 768) {
         burger.style.display = 'block';
@@ -18,11 +19,17 @@ function resizeHandler() {
         burger.style.display = 'none';
     }
 }
+
 window.addEventListener('resize', resizeHandler);
 resizeHandler(); 
 
 burger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+});
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
 });
 
 // animation du slogan
