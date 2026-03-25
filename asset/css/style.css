@@ -158,8 +158,14 @@ button{
 .swiper-slide h3 {
     font-size: 2em;
     background-color: #fff;
-    margin-top: 50%;
+    margin-top: 20%;
     text-align: center;
+}
+.swiper-slide img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10%;
+    border-radius: 20px;
 }
 .button-swiper-container {
     display: flex;
