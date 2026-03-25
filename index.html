@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tag pour SEO et partage social -->
     <meta name="robots" content="index, follow">
     <meta name="description" content="Découvrez le portfolio de Silvère LAURENT, développeur web et concepteur développeur d’applications situé à toulouse. Je présente mes compétences en HTML, CSS, JavaScript, et plus encore. Consultez mon CV et contactez-moi pour collaborer sur des projets passionnants.">
     <meta property="og:title" content="Portfolio LAURENT Silvère – Développeur Web & Applications">
@@ -10,15 +11,18 @@
     <meta property="og:url" content="https://portfolio-silvere.netlify.app/">
     <meta property="og:image" content="https://portfolio-silvere.netlify.app/asset/image/fougere.avif">
     <title>Portfolio LAURENT Silvère</title>
+    <!-- Lien vers les fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Lienvers les feuilles de style  -->
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="header">
         <section class="titre">
             <h1>
             LAURENT Silvère
@@ -37,7 +41,7 @@
         </div>
     </header>
     <main>
-        <section class="a-propos">
+        <section data-aos="zoom-out-right" class="a-propos">
             <h2>
                 A propos de moi
             </h2>
@@ -46,12 +50,12 @@
 
                 Ancien cuisinier, j’ai développé une forte rigueur dans le respect des méthodes de travail, de l’organisation et de la qualité, des principes que j’applique aujourd’hui au développement logiciel : code propre, respect des bonnes pratiques et attention portée à la sécurité et à l’accessibilité.
 
-                Lors de mon stage, j’ai conçu un <a href="https://github.com/lasi23/owibra" target="_blank" rel="noopener noreferrer">site web</a> pour une micro-entreprise, ce qui m’a permis de gérer un projet de manière autonome, de l’analyse du besoin à la mise en ligne.
+                Lors de mon stage, j’ai conçu un <a class="lien-projet" href="https://github.com/lasi23/owibra" target="_blank" rel="noopener noreferrer">site web</a> pour une micro-entreprise, ce qui m’a permis de gérer un projet de manière autonome, de l’analyse du besoin à la mise en ligne.
 
                 Je souhaite aujourd’hui poursuivre mon parcours en alternance dans la formation Concepteur Développeur d’Applications afin de participer à des projets plus complexes et travailler au sein d’une équipe de développement.
             </p>
         </section>
-        <section class="competence">
+        <section data-aos="zoom-out-left" class="competence">
             <h2>
                 Compétences :
             </h2>
@@ -77,13 +81,13 @@
                 <button id="startButton">start</button>
             </div>
         </section>
-        <section class="cv">
+        <section data-aos="zoom-out-right" class="cv">
             <h2>
                 CV
             </h2>
             <a class="button" href="asset/document/cv_2026.pdf" target="_blank" rel="noopener noreferrer"> cliquez ici</a>            
         </section>
-        <section class="contact">
+        <section data-aos="zoom-out-left" class="contact">
             <h2>
                 Liens
             </h2>
@@ -92,9 +96,19 @@
             <a class="button" href="https://github.com/lasi23" target="_blank" rel="noopener noreferrer">GitHub</a>
         </section>
         </main>
+        <!-- boutton haut de page -->
+        <a href="#header"><img id="scroll-to-top" src="asset/icon/arrow_circle_up_24dp_8B1A10_FILL0_wght400_GRAD0_opsz24.svg" alt="Image d'une fleéche pointant vers le haut pour remonter en haut de page"></a>
+        <!-- aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- anim js -->
         <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-        <script src="asset/js/script.js"></script>
+        <!-- carousel swipper -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="asset/js/swipper.js"></script>
+        <!-- script js -->
+        <script src="asset/js/script.js"></script>
     </body>
 </html>

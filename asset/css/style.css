@@ -6,7 +6,7 @@ body {
     width: 100%;
     margin: 0;
 }
-
+/* ---------------------------header--------------------------- */
 header {
     position: relative;
     height: 100vh;
@@ -56,7 +56,7 @@ header {
     opacity: 1;
     transition: opacity 5s ease-in-out;
 }
-
+/* ----------------------------main--------------------------- */ 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -82,7 +82,7 @@ main {
     
 }
 
-a {
+.lien-projet {
     margin-top: 10px;
     text-align: center;
 }
@@ -107,6 +107,7 @@ button{
     font-size: 17px;
     width: 100px;
     padding: 1em 2em;
+    margin-top: 2%;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border: 1px solid black;
@@ -122,6 +123,12 @@ button{
 .button:active {
     transform: translateY(2px) translateX(1px);
     box-shadow: 0 0 0 0 black;
+}
+
+/* --------------boutton scroll to top------------------------- */ 
+#scroll-to-top {
+    display: none;
+    width: 300px;
 }
 
 /* -----------------------css swipper------------------------- */

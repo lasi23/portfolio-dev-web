@@ -20,7 +20,6 @@ if (window.innerWidth > 768) {
 // animation de l'image de fougère qui s'estompe progressivement après 2 secondes
 const img = document.getElementById('img-fougere');
 let opacity = 1;
-
 setTimeout(() => {
     const interval = setInterval(() => {
         opacity -= 0.005;
