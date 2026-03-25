@@ -30,3 +30,13 @@ setTimeout(() => {
         }
     }, 80); 
 }, 2000);
+
+// apparition du boutton scroll to top après 2 secondes
+const scrollBtn = document.getElementById('scroll-to-top');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+        scrollBtn.style.display = 'block';
+    } else {
+        scrollBtn.style.display = 'none';
+    }
+});

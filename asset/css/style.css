@@ -128,7 +128,11 @@ button{
 /* --------------boutton scroll to top------------------------- */ 
 #scroll-to-top {
     display: none;
-    width: 300px;
+    position: fixed;
+    bottom: 20px;
+    right: 1%;
+    z-index: 100;
+    width: 100px;
 }
 
 /* -----------------------css swipper------------------------- */
