@@ -17,19 +17,25 @@ window.addEventListener('scroll', () => {
 
 // navigation dinamique portable
 
-console.log(allLinks); // Vérification des liens
-window.addEventListener("scroll", () => {
-    allLinks.forEach(link => {
-        const sectionId = link.getAttribute("href").substring(1); // récupère l'ID sans #
-        const section = document.getElementById(sectionId);
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        const id = entry.target.id;
+        const link = document.querySelector(`a[href="#${id}"]`);
 
-        if (window.scrollY >= section.offsetTop - 50 &&
-            window.scrollY < section.offsetTop + section.offsetHeight) {
-        link.classList.add("show"); // caché si section visible
+        if (!link) return;
+
+        if (entry.isIntersecting) {
+        link.classList.add("show");
         } else {
-        link.classList.remove("show"); // sinon visible
+        link.classList.remove("show");
         }
     });
+    }, {
+    threshold: 0.5 // 50% visible
+});
+
+document.querySelectorAll("section").forEach(section => {
+  observer.observe(section);
 });
 
 // menu burger
@@ -104,6 +110,5 @@ window.addEventListener('load', initAOS);
             scrollBtn.classList.add('show');
         } else {
             scrollBtn.classList.remove('show');
-            console.log('test scroll');
         }
     });

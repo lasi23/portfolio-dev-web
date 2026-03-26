@@ -45,7 +45,7 @@ header {
                 &:hover {
                     color: #fbd58e;
                 }
-                &.hidden {
+                &.show {
                     color: green;
                 }
             }
@@ -212,10 +212,9 @@ footer {
 /* --------------boutton scroll to top------------------------- */ 
 #scroll-to-top-container {
     display: fixed;
-    justify-content: center;
     visibility: hidden;
-     opacity: 0;
-     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 #scroll-to-top {
     opacity: 0.6;
