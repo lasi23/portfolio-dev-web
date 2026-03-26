@@ -98,8 +98,8 @@ header {
     font-size: xx-large;
     margin-top: 10%;
 }
-
-.char {
+/* -----efet de texte-- */
+.char { 
     display: inline-block;
 }
 
@@ -161,6 +161,28 @@ button{
     
 }
 
+/* ------------------------------footer--------------------------- */ 
+footer {
+    background-color: rgba(3, 3, 3, 0.7);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    z-index: 2;
+    height: 10vh;
+    & a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        padding: 0.5rem;
+        &:hover {
+            color: #fbd58e;
+        }
+
+    }
+        
+}
+
 /* ----------------------css button------------------------- */
 .button {
     background-color: rgb(228, 210, 119);
@@ -189,18 +211,18 @@ button{
 
 /* --------------boutton scroll to top------------------------- */ 
 .scroll-to-top-container {
-    display: flex;
+    display: none;
     justify-content: center;
 }
 #scroll-to-top {
-    opacity: 0;
+    opacity: 0.6;
     position: fixed;
     bottom: 20px;
     z-index: 100;
     width: 100px;
 }
 
-#scroll-to-top.show {
+#scroll-to-top-container.show {
     opacity: 0.6;
     transition: opacity 0.5s ease-in-out;
 }

@@ -4,7 +4,7 @@ const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
 const allLinks = document.querySelectorAll('.nav-links li a');  
 const img = document.getElementById('img-fougere');
-const scrollBtn = document.getElementById('scroll-to-top');
+const scrollBtn = document.getElementById('scroll-to-top-container');
 
 // scroll barre de navigation
 window.addEventListener('scroll', () => {
