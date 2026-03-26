@@ -45,6 +45,9 @@ header {
                 &:hover {
                     color: #fbd58e;
                 }
+                &.hidden {
+                    color: green;
+                }
             }
             @media (max-width: 768px) {
                 display: none; 

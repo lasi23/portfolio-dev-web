@@ -1,5 +1,12 @@
-// scroll barre de navigation
 const nav = document.querySelector('nav');
+const burger = document.querySelector('nav img');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');
+const allLinks = document.querySelectorAll('.nav-links li a');  
+const img = document.getElementById('img-fougere');
+const scrollBtn = document.getElementById('scroll-to-top');
+
+// scroll barre de navigation
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         nav.style.position = 'fixed';
@@ -8,10 +15,25 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// navigation dinamique portable
+
+console.log(allLinks); // Vérification des liens
+window.addEventListener("scroll", () => {
+    allLinks.forEach(link => {
+        const sectionId = link.getAttribute("href").substring(1); // récupère l'ID sans #
+        const section = document.getElementById(sectionId);
+
+        if (window.scrollY >= section.offsetTop - 50 &&
+            window.scrollY < section.offsetTop + section.offsetHeight) {
+        link.classList.add("hidden"); // caché si section visible
+        } else {
+        link.classList.remove("hidden"); // sinon visible
+        }
+    });
+});
+
 // menu burger
-const burger = document.querySelector('nav img');
-const navLinks = document.querySelector('.nav-links');
-const links = document.querySelectorAll('.nav-links li');   
+
 function resizeHandler() {
     if (window.innerWidth <= 768) {
         burger.style.display = 'block';
@@ -52,7 +74,6 @@ if (window.innerWidth > 768) {
     });
 }
 // animation de l'image de fougère qui s'estompe progressivement après 2 secondes
-const img = document.getElementById('img-fougere');
 let opacity = 1;
 setTimeout(() => {
     const interval = setInterval(() => {
@@ -78,7 +99,6 @@ window.addEventListener('load', initAOS);
 
 
 // apparition du boutton scroll to top après 2 secondes
-const scrollBtn = document.getElementById('scroll-to-top');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
         scrollBtn.classList.add('show');
