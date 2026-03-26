@@ -1,7 +1,9 @@
 html, body {
     overflow-x: hidden;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Libre Franklin", sans-serif;
     font-size: 1.2em;
