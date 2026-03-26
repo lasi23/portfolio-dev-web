@@ -99,7 +99,6 @@ window.addEventListener('load', initAOS);
 
 
 // apparition du boutton scroll to top après 2 secondes
-if (window.innerWidth > 768) {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 200) {
             scrollBtn.classList.add('show');
@@ -108,4 +107,3 @@ if (window.innerWidth > 768) {
             console.log('test scroll');
         }
     });
-}
