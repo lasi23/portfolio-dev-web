@@ -25,9 +25,9 @@ window.addEventListener("scroll", () => {
 
         if (window.scrollY >= section.offsetTop - 50 &&
             window.scrollY < section.offsetTop + section.offsetHeight) {
-        link.classList.add("hidden"); // caché si section visible
+        link.classList.add("show"); // caché si section visible
         } else {
-        link.classList.remove("hidden"); // sinon visible
+        link.classList.remove("show"); // sinon visible
         }
     });
 });
@@ -99,10 +99,13 @@ window.addEventListener('load', initAOS);
 
 
 // apparition du boutton scroll to top après 2 secondes
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {
-        scrollBtn.classList.add('show');
-    } else {
-        scrollBtn.classList.remove('show');
-    }
-});
+if (window.innerWidth > 768) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            scrollBtn.classList.add('show');
+        } else {
+            scrollBtn.classList.remove('show');
+            console.log('test scroll');
+        }
+    });
+}
