@@ -168,7 +168,6 @@ footer {
     text-align: center;
     padding: 1rem;
     position: relative;
-    z-index: 2;
     height: 10vh;
     & a{
         color: white;
@@ -209,7 +208,7 @@ footer {
     box-shadow: 0 0 0 0 black;
 }
 
-/* --------------boutton scroll to top------------------------- */ 
+/* --------------------------------boutton scroll to top------------------------- */ 
 #scroll-to-top-container {
     display: fixed;
     visibility: hidden;

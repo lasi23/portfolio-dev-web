@@ -1,0 +1,22 @@
+body{
+    background-color: rgba(133, 217, 189, 0.6);
+}
+fieldset{
+    display: grid;
+    grid-template-columns: repeat( 1fr);
+    text-align: center;
+    width: max-content;
+    margin-left: 25%;
+    background-color: rgb(56, 56, 56);
+    color: #fbd58e;
+    border: 1px solid #fbd58e;
+    & legend {
+        padding-top: 50px;
+    }
+    & input {
+        height: 30px;
+    }
+    & label{
+        margin-top: 20px;
+    }
+}
