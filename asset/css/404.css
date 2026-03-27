@@ -1,7 +1,29 @@
+* {
+    margin-top: 2%;
+}
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(162, 223, 223);
+    & img{
+        width: 30vh;
+        border-radius: 30px;
+        animation: opac 3s;
+    }
+}
+
+@keyframes opac {
+    0% {opacity: 0;  transform: translateX(0);}
+    10% {opacity: 0.1;transform: translateX(-5px);}
+    20% {opacity: 0.2;transform: translateX(5px);}
+    30% {opacity: 0.3;transform: translateX(-5px);}
+    40% {opacity: 0.4;transform: translateX(5px);}
+    50% {opacity: 0.5;transform: translateX(-5px);}
+    60% {opacity: 0.6;transform: translateX(5px);}
+    70% {opacity: 0.7;transform: translateX(-5px);}
+    80% {opacity: 0.8;transform: translateX(5px);}
+    90% {opacity: 0.9;transform: translateX(-5px);}
+    100% {opacity: 1;transform: translateX(0);}  
 }
