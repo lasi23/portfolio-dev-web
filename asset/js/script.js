@@ -73,8 +73,8 @@ if (window.innerWidth > 768) {
         targets: '.char',
         translateY: [-50, 0],
         rotate: [-360, 0],
-        duration: 800,
-        delay: anime.stagger(100),
+        duration: 200,
+        delay: anime.stagger(50),
         easing: 'easeOutBounce',
         loop: false
     });
