@@ -473,7 +473,7 @@ footer a:hover {
     z-index: 100;
     width: 48px;
     height: 48px;
-    background: var(--vert-profond);
+    background: var(--vert-doux);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -481,7 +481,7 @@ footer a:hover {
     box-shadow: 0 4px 16px rgba(26,60,46,0.30);
     transition: transform 0.2s, box-shadow 0.2s;
     padding: 10px;
-    filter: invert(1) brightness(2);
+    /* filter: invert(1) brightness(2); */
 }
 
 #scroll-to-top:hover {
