@@ -58,6 +58,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: var(--vert-clair);
 }
 
 /* ---------- nav ---------- */
@@ -507,7 +508,7 @@ footer a:hover {
     .a-propos, .competence {
         grid-column: 1 / 2;
     }
-
+    
     .titre h2 {
         font-size: 1rem;
     }
