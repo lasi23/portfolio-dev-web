@@ -60,37 +60,32 @@ links.forEach(link => {
     });
 });
 
-// animation du slogan
+// animation du slogan — mots non-cassables
 if (window.innerWidth > 768) {
     const titre = document.getElementById('anim-slogan');
 
     titre.innerHTML = titre.textContent
-        .split('')
-        .map(char => char === ' ' ? `<span class="char">&nbsp;</span>` : `<span class="char">${char}</span>`)
-        .join('');
+        .split(' ')
+        .map(mot => {
+            const chars = mot
+                .split('')
+                .map(c => `<span class="char">${c}</span>`)
+                .join('');
+            return `<span style="white-space:nowrap">${chars}</span>`;
+        })
+        .join(' ');
 
     anime({
         targets: '.char',
         translateY: [-50, 0],
         rotate: [-360, 0],
+        opacity: [0, 1],        // ← fade in : invisible au départ
         duration: 200,
         delay: anime.stagger(50),
         easing: 'easeOutBounce',
         loop: false
     });
 }
-// animation de l'image de fougère qui s'estompe progressivement après 2 secondes
-let opacity = 1;
-setTimeout(() => {
-    const interval = setInterval(() => {
-        opacity -= 0.005;
-        img.style.opacity = opacity;
-        
-        if (opacity <= 0.7) {
-            clearInterval(interval);
-        }
-    }, 80); 
-}, 2000);
 
 // initialisation aos
 function initAOS() {
