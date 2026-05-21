@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@400;600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../asset/css/contact.css">
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
 </head>
 <body>
 
@@ -58,6 +61,8 @@
                     <textarea name="message" id="message" rows="5" placeholder="Bonjour Silvère, je souhaite…" required></textarea>
                 </div>
 
+                <div class="h-captcha" data-captcha="true"></div>
+
                 <button type="submit" class="btn-envoyer">
                     Envoyer le message
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
@@ -66,6 +71,5 @@
             </form>
         </div>
     </main>
-
 </body>
 </html>

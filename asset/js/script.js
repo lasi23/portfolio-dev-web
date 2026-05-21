@@ -61,7 +61,6 @@ links.forEach(link => {
 });
 
 // animation du slogan — mots non-cassables
-if (window.innerWidth > 768) {
     const titre = document.getElementById('anim-slogan');
 
     titre.innerHTML = titre.textContent
@@ -85,7 +84,7 @@ if (window.innerWidth > 768) {
         easing: 'easeOutBounce',
         loop: false
     });
-}
+
 
 // initialisation aos
 function initAOS() {
