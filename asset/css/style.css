@@ -84,7 +84,7 @@ nav > img {
     height: 44px;
     cursor: pointer;
     padding: 0;
-    filter: invert(1);
+    filter: hue-rotate(90deg);
 }
 
 .nav-links {
@@ -549,14 +549,15 @@ footer a:hover {
 
     .nav-links li {
         text-align: center;
+        border-top: 1px solid rgba(244, 185, 66, 0.10);
     }
-
+    
     .nav-links a {
-        display: block;
+        display: inline-block;
         padding: 0.85rem 1.5rem;
         border-radius: 0;
-        border-top: 1px solid rgba(244, 185, 66, 0.10);
         font-size: 1rem;
+        border-top: 1px solid var(--or-pale);
     }
 
     .slowgan {

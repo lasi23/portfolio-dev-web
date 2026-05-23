@@ -41,7 +41,7 @@ document.querySelectorAll("section").forEach(section => {
 // menu burger
 
 function resizeHandler() {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 900) {
         burger.style.display = 'block';
     }else {
         burger.style.display = 'none';
