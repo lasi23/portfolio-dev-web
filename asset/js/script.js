@@ -91,7 +91,7 @@ function initAOS() {
     AOS.init({
         delay: 200,
         duration: 800,
-        disable: window.innerWidth <= 1024 
+        
     });
 }
 

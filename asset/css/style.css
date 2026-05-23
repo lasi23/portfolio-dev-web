@@ -178,16 +178,17 @@ nav > img {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
-    transform: rotate(90deg) translateY(-100vw);
-    transform-origin: top left;
+    height: 100%;        /* ← couvre tout le header quelle que soit la taille */
+    transform: none;     /* ← on retire la rotation */
+    transform-origin: unset;
     z-index: 0;
 }
 
 .fougere img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;       /* ← remplit sans déformer */
+    object-position: center;
     opacity: 0.90;
     filter: saturate(1.1) brightness(0.85);
 }
